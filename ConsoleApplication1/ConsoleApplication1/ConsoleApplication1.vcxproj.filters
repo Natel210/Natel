@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ConsoleApplication1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ISequeneces.h">
+      <Filter>Object\Sequeneces</Filter>
+    </ClInclude>
+    <ClInclude Include="ASequeneces.h">
+      <Filter>Object\Sequeneces</Filter>
+    </ClInclude>
+    <ClInclude Include="AObject.h">
+      <Filter>Object\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ASingleton.h">
+      <Filter>Object\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="IObject.h">
+      <Filter>Object\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportDll.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object">
+      <UniqueIdentifier>{6e362ee7-102f-48f8-956f-5f518b9028ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Base">
+      <UniqueIdentifier>{c5247ded-7d01-4f84-8e54-11c936d510ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Singleton">
+      <UniqueIdentifier>{c8d739a4-cf3c-44e3-8386-ad0f09e3a8ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Sequeneces">
+      <UniqueIdentifier>{80a87ce4-5d4d-48b3-b8a8-6f70abc1f8f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{adc140ba-06ec-4f94-8786-79688e937fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\NewFilter1">
+      <UniqueIdentifier>{e45eed5b-91ad-40ae-8b0e-b331dab0dc80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
