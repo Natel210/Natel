@@ -131,14 +131,6 @@
   <ItemGroup>
     <ClCompile Include="ConsoleApplication1.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AObject.h" />
-    <ClInclude Include="ASingleton.h" />
-    <ClInclude Include="ASequeneces.h" />
-    <ClInclude Include="ExportDll.h" />
-    <ClInclude Include="IObject.h" />
-    <ClInclude Include="ISequeneces.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

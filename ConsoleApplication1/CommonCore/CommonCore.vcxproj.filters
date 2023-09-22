@@ -1,46 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Core">
-      <UniqueIdentifier>{1b2323bb-cc98-4868-8cb9-5574c69b12cd}</UniqueIdentifier>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{6bb25abc-22aa-4bf8-8b78-909ef5d0cc0b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Exposed">
-      <UniqueIdentifier>{febfc125-010f-4b79-b791-2fdd3b49baa6}</UniqueIdentifier>
+    <Filter Include="Item">
+      <UniqueIdentifier>{4a35d899-e89d-4dae-ba7a-f7642184c9d8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Shared">
-      <UniqueIdentifier>{dc6cf77b-0a23-4b5c-b728-f83d1d7b4750}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shared\Object">
-      <UniqueIdentifier>{81a1f7bc-c6a1-4420-b751-be82ab30bb34}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shared\Sequeneces">
-      <UniqueIdentifier>{7d5df79e-888c-4ec1-8b46-55611cfb7c05}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shared\Singleton">
-      <UniqueIdentifier>{53365fa7-647c-4443-9bb3-9b05cb26bdcd}</UniqueIdentifier>
+    <Filter Include="Batch">
+      <UniqueIdentifier>{ca28d2a5-f2bc-4e25-9848-b3e97795aa5f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Object\AObject.h">
-      <Filter>Shared\Object</Filter>
+    <ClCompile Include="소스.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interface\ISequeneces.h">
+      <Filter>Interface</Filter>
     </ClInclude>
-    <ClInclude Include="Sequeneces\ISequeneces.h">
-      <Filter>Shared\Sequeneces</Filter>
+    <ClInclude Include="Interface\IObject.h">
+      <Filter>Interface</Filter>
     </ClInclude>
-    <ClInclude Include="Sequeneces\ASequeneces.h">
-      <Filter>Shared\Sequeneces</Filter>
+    <ClInclude Include="Item\ASingleton.h">
+      <Filter>Item</Filter>
     </ClInclude>
-    <ClInclude Include="Singleton\ASingleton.h">
-      <Filter>Shared\Singleton</Filter>
+    <ClInclude Include="Item\AObject.h">
+      <Filter>Item</Filter>
     </ClInclude>
-    <ClInclude Include="SharedHeader.h">
-      <Filter>Shared</Filter>
-    </ClInclude>
-    <ClInclude Include="Object\IObject.h">
-      <Filter>Shared\Object</Filter>
+    <ClInclude Include="Item\ASequeneces.h">
+      <Filter>Item</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="cpp.hint" />
+    <None Include="Batch\ExportFileXCopy.bat">
+      <Filter>Batch</Filter>
+    </None>
   </ItemGroup>
 </Project>

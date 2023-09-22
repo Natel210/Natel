@@ -4,26 +4,6 @@
     <ClCompile Include="ConsoleApplication1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ISequeneces.h">
-      <Filter>Object\Sequeneces</Filter>
-    </ClInclude>
-    <ClInclude Include="ASequeneces.h">
-      <Filter>Object\Sequeneces</Filter>
-    </ClInclude>
-    <ClInclude Include="AObject.h">
-      <Filter>Object\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="ASingleton.h">
-      <Filter>Object\Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="IObject.h">
-      <Filter>Object\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="ExportDll.h">
-      <Filter>Object</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Object">
       <UniqueIdentifier>{6e362ee7-102f-48f8-956f-5f518b9028ee}</UniqueIdentifier>
     </Filter>

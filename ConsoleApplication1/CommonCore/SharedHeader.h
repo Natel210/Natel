@@ -1,5 +1,0 @@
-#ifndef USER_SPACE_DEFINE
-
-#endif // !USER_SPACE_DEFINE
-
-
