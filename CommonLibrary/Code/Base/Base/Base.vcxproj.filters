@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="String">
+      <UniqueIdentifier>{d505c834-4289-474a-85d4-be420f0517d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{b91bbae9-1f76-4239-a5d1-aa268553e5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form">
+      <UniqueIdentifier>{d6c2cca5-6c08-43f1-98e5-3f24d6a763f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form\Object">
+      <UniqueIdentifier>{5ca4059d-1315-4f7d-9b3e-b80e7c314f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form\Singleton">
+      <UniqueIdentifier>{6214c2f6-99a8-4753-b4fe-76e627eaed05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form\Sequeneces">
+      <UniqueIdentifier>{71881b38-c6c9-49f6-9a60-691d0bc82704}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form\InheritanceHierarchy">
+      <UniqueIdentifier>{0eaa8faf-ea51-4633-b73d-12e75acc3747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{18285178-745b-44fc-9d3b-d7d78cdfb7bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Form\Singleton\ASingleton.cpp">
+      <Filter>Form\Singleton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ExportFileXCopyExclude.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Define\LibDefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="String\LibString.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\Object\AObject.h">
+      <Filter>Form\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\Sequeneces\ASequenecesState.h">
+      <Filter>Form\Sequeneces</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\Sequeneces\ISequenecesState.h">
+      <Filter>Form\Sequeneces</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\Sequeneces\ASequenecesContext.h">
+      <Filter>Form\Sequeneces</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\Singleton\ASingleton.h">
+      <Filter>Form\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\InheritanceHierarchy\ILoopHierarchy.h">
+      <Filter>Form\InheritanceHierarchy</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\Object\IObject.h">
+      <Filter>Form\Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
