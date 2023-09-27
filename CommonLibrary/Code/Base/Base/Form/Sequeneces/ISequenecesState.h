@@ -5,7 +5,7 @@
 #include <memory>
 #include "Base/Define/LibDefine.h"
 ////////////////////////////////////////////////////////////////////////////////
-namespace commonlib {
+namespace common {
 	template<class _data>
 	class ISequenecesState
 	{

@@ -3,7 +3,7 @@
 #define DECLARE_AOBJECT_H
 #include "Base/String/LibString.h"
 #include "Base/Form/Object/IObject.h"
-namespace commonlib {
+namespace common {
 	class AObject : public IObject
 	{
 	public:
@@ -16,7 +16,9 @@ namespace commonlib {
 			_name = name;
 		}
 	public:
-		virtual ~AObject() = default;
+		virtual ~AObject() {
+
+		}
 	private:
 		TString _name;
 	};

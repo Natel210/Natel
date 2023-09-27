@@ -7,7 +7,7 @@
 #include "Base/Form/Sequeneces/ISequenecesState.h"
 #include "Base/Form/Singleton/ASingleton.h"
 ////////////////////////////////////////////////////////////////////////////////
-namespace commonlib {
+namespace common {
 	/// <summary>
 	/// Sequenece Base Form.
 	/// </summary>

@@ -2,7 +2,7 @@
 #ifndef DECLARE_IOBJECT_H
 #define DECLARE_IOBJECT_H
 #include "Base/String/LibString.h"
-namespace commonlib {
+namespace common {
 	class IObject
 	{
 	public:

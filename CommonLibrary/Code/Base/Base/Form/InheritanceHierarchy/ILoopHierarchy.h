@@ -1,7 +1,7 @@
 #pragma once
 #ifndef DECLARE_ILOOPHIERARCHY_H
 #define DECLARE_ILOOPHIERARCHY_H
-namespace commonlib {
+namespace common {
 	class ILoopHierarchy
 	{
 		virtual void Begin() = 0;

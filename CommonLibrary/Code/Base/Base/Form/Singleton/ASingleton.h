@@ -6,7 +6,7 @@
 #include "Base/String/LibString.h"
 #include "Base/Form/Object/AObject.h"
 ////////////////////////////////////////////////////////////////////////////////
-namespace commonlib {
+namespace common {
 	/// <summary>
 	/// <para>template Singleton.</para>
 	/// </summary>

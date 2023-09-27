@@ -10,6 +10,7 @@
 #endif // _CommonLibrary
 ////////////////////////////////////////////////////////////////////////////////
 
-
+#define CommonSpace namespace common {
+#define SpaceEnd }
 
 #endif // !DECLARE_COMMONLIBRARY_BASE_DEFINE_H

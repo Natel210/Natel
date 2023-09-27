@@ -27,11 +27,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Form\Singleton\ASingleton.cpp">
-      <Filter>Form\Singleton</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="ExportFileXCopyExclude.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -62,5 +57,13 @@
     <ClInclude Include="Form\Object\IObject.h">
       <Filter>Form\Object</Filter>
     </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

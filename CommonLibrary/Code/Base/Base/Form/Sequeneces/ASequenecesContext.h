@@ -5,7 +5,7 @@
 #include "Base/Form/Singleton/ASingleton.h"
 #include "Base/Form/Sequeneces/ISequenecesState.h"
 #include "Base/Form/Sequeneces/ASequenecesState.h"
-namespace commonlib {
+namespace common {
 	template<class _data, class _This_Class>
 	class ASequenecesContext : public ASingleton<_This_Class>
 	{

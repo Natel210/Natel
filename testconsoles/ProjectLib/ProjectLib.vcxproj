@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -21,32 +21,32 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2035052b-8110-490e-a6b5-a2b019489acb}</ProjectGuid>
-    <RootNamespace>Base</RootNamespace>
+    <ProjectGuid>{0facc3be-78b8-4007-91f5-f54c395a70a2}</ProjectGuid>
+    <RootNamespace>ProjectLib</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>MultiByte</CharacterSet>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -92,33 +92,26 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CommonLibrary;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Code\$(ProjectName)\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PostBuildEvent>
-      <Command>rmdir $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ /s /q
-call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ *.h $(ProjectDir)ExportFileXCopyExclude.txt
-call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ *.cpp $(ProjectDir)ExportFileXCopyExclude.txt</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CommonLibrary;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Code\$(ProjectName)\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,41 +119,29 @@ call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PostBuildEvent>
-      <Command>rmdir $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ /s /q
-call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ *.h $(ProjectDir)ExportFileXCopyExclude.txt
-call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ *.cpp $(ProjectDir)ExportFileXCopyExclude.txt</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CommonLibrary;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Code\$(ProjectName)\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PostBuildEvent>
-      <Command>rmdir $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ /s /q
-call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ *.h $(ProjectDir)ExportFileXCopyExclude.txt
-call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ *.cpp $(ProjectDir)ExportFileXCopyExclude.txt</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level4</WarningLevel>
+      <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CommonLibrary;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\Code\$(ProjectName)\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -168,29 +149,13 @@ call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <PostBuildEvent>
-      <Command>rmdir $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ /s /q
-call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ *.h $(ProjectDir)ExportFileXCopyExclude.txt
-call $(SolutionDir)ExportFileXCopy.bat $(ProjectDir) $(SolutionDir)Bin\Include\$(ProjectName)\$(ProjectName)\ *.cpp $(ProjectDir)ExportFileXCopyExclude.txt</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ExportFileXCopyExclude.txt" />
+    <ClInclude Include="header.h" />
+    <ClInclude Include="test.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Define\LibDefine.h" />
-    <ClInclude Include="Form\InheritanceHierarchy\ILoopHierarchy.h" />
-    <ClInclude Include="Form\Object\AObject.h" />
-    <ClInclude Include="Form\Object\IObject.h" />
-    <ClInclude Include="Form\Sequeneces\ASequenecesContext.h" />
-    <ClInclude Include="Form\Sequeneces\ASequenecesState.h" />
-    <ClInclude Include="Form\Sequeneces\ISequenecesState.h" />
-    <ClInclude Include="Form\Singleton\ASingleton.h" />
-    <ClInclude Include="ObjectManager.h" />
-    <ClInclude Include="String\LibString.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
