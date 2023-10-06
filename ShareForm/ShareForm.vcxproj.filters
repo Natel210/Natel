@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{3b2c0a02-565a-4d5c-bec5-a9704b044b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{5e728dd6-f709-468b-a7af-8cf7b5dae03f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{40e5fa9a-5e90-431a-a64e-255a58f79e6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Singleton">
+      <UniqueIdentifier>{2ba066c2-bbae-41f2-9b09-b28fc860a267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sequence">
+      <UniqueIdentifier>{e07c357a-5afd-45d7-99cc-153fbf21122d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{294a99b3-49cb-4d06-9666-3aeaced1fd89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ShareForm\Object\IObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareForm\Object\AObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareForm\Define\ShareFormDefine_Namespace.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareForm\Singleton\ASingleton.h">
+      <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareForm\Sequence\ASequenceState.h">
+      <Filter>Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareForm\Sequence\ISequenceState.h">
+      <Filter>Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareForm\Sequence\ASequenceContext.h">
+      <Filter>Sequence</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareForm\Command\ICommand.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ShareForm\Object\AObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
